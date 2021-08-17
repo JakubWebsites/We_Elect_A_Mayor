@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 62.5%;
+	color: #ffffff;
+	background-color: #00004d;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 8fr 1fr;
+}

@@ -1,0 +1,157 @@
+.content {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    color: #00004d;
+    background-color: #dddddd;
+    padding: 3rem 0;
+}
+
+.gallery {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery__photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 3px outset #5050ff;
+}
+
+img {
+    width: 9rem;
+    border: 3px outset #5050ff;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.button {
+    text-transform: uppercase;
+    margin: 2rem;
+    align-self: center;
+    padding: .5rem;
+}
+
+.summary {
+    display: none;
+}
+
+.ignore-last {
+    display: none;
+}
+
+/*QUIZ*/
+
+.instructions {
+    grid-column: 2/3;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    font-size: 1.6rem;
+    width: 60%;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 2rem #000000;
+    border: 3px outset #5050ff;
+}
+
+.instructions__paragraph {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 1.5rem 0 0 0;
+}
+
+.quiz {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.quiz__text {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.quiz__answer-list {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz__answer-item {
+    display: flex;
+}
+
+.quiz__answer {
+    text-align: left;
+    margin: .3rem;
+    display: inline;
+}
+
+/*RESULT*/
+
+.result {
+    grid-column: 2/3;
+    display: none;
+    flex-direction: column;
+}
+
+.result__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.result__candidate {
+    display: flex;
+    border: 3px outset #5050ff;
+    margin-top: 2rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.result__name {
+    font-size: 3rem;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.result__name-2 {
+    display: none;
+    font-size: 3rem;
+    text-align: left;
+    flex-grow: 1;
+    padding-left: 2rem;
+}
+
+.result__score {
+    font-size: 7rem;
+    padding-right: 1rem;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.result__subtitle {
+    font-size: 1.5rem;
+    text-align: left;
+    padding-right: 2rem;
+}

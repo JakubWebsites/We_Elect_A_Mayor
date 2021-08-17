@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="discription" content=""/>
+	<meta name="keywords" content=""/>
+	<title>Wybieramy Burmistrza</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+	<div class="container">
+	
+		<header class="header">
+			<a href="index.html" class="header__back-to-main">
+				<h1 class="header__name">Wybieramy <br/><span class="header__mayor">Burmistrza</span></h1>
+			</a>
+			<div class="header__description">
+				<h2 class="header__text">
+					Odpowiedz na ważne pytania o Twoim mieście <br/> i sprawdź, który kandydat ma poglądy podobne do Twoich
+				</h2>
+				<h2 class="header__text-2">
+					Odpowiedz na ważne pytania <br/> o Twoim mieście i sprawdź, <br/> który kandydat ma poglądy <br/> podobne do Twoich
+				</h2>
+			</div>
+		</header>
+			
+		<div class="content">
+			<section class="gallery">
+				<div class="gallery__photos">
+					<figure class="gallery__item item__A">
+						<img src="photos/albatros.jpg" alt="Andrzej Albatros">
+						<figcaption>Andrzej Albatros</figcaption>
+					</figure>
+					<figure class="gallery__item item__B">
+						<img src="photos/bazant.jpg" alt="Bartłomiej Bażant">
+						<figcaption>Bartłomiej Bażant</figcaption>
+					</figure>
+					<figure class="gallery__item item__C">
+						<img src="photos/czapla.jpg" alt="Cezary Czapla">
+						<figcaption>Cezary Czapla</figcaption>
+					</figure>
+					<figure class="gallery__item item__D">
+						<img src="photos/dzieciol.jpg" alt="Dominika Dzięcioł">
+						<figcaption>Dominika Dzięcioł</figcaption>
+					</figure>
+				</div>
+				<button class="button start">Rozpoczynam ankietę</button>
+			</section>
+
+			<section class="instructions">
+				<p class="instructions__paragraph">Wybierz proszę odpowiedź, z którą napełniej się zgadzasz. Jeśli żadna z odpowiedzi Ci nie odpowiada lub ta kwestia jest Ci absolutnie obojętna, możesz wybrać "Pomiń". Pamiętaj jednak, że taka decyzja zmniejsza dokładność wyniku.</p>
+				<button class="button understand">Rozumiem</button>
+			</section>
+
+			<section class="quiz">
+				<progress class="quiz__progress" value="0" max="5"></progress>
+				<form action="" class="quiz__question">
+					<p class="quiz__text"></p>
+					<div class="quiz__answer-list">
+						<div class="quiz__answer-item">
+							<input type="radio" value="A" id="answerOne" name="answer" class="quiz__answer answerA">
+							<label for="answerOne" class="quiz__answer answer-one-label"></label>
+						</div>
+						<div class="quiz__answer-item">
+							<input type="radio" value="B" id="answerTwo" name="answer" class="quiz__answer answerB">	
+							<label for="answerTwo" class="quiz__answer answer-two-label"></label>
+						</div>
+						<div class="quiz__answer-item">
+							<input type="radio" value="C" id="answerThree" name="answer" class="quiz__answer answerC">
+							<label for="answerThree" class="quiz__answer answer-three-label"></label>
+						</div>
+					</div>
+				</form>
+				<div class="button__box">
+					<button class="button accept">Zatwierdź</button>
+					<button class="button ignore">Pomiń</button>
+				</div>
+				<div class="button__box">
+					<button class="button summary">Zatwierdź i zakończ</button>
+					<button class="button ignore-last">Pomiń i zakończ</button>
+				</div>
+			</section>
+
+			<section class="result">
+				<div class="result__title">Wyniki</div>
+				<div class="result__candidate">
+					<img class="result__img" src="photos/albatros.jpg" alt="Andrzej Albatros">
+					<div class="result__name">Andrzej<br/>Albatros</div>
+					<div class="result__name-2">Andrzej Albatros</div>
+					<div class="result__score score__A"></div>
+					<div class="result__subtitle">zgodności<br/>odpowiedzi</div>
+				</div>
+				<div class="result__candidate">
+					<img class="result__img" src="photos/bazant.jpg" alt="Bartłomiej Bażant">
+					<div class="result__name">Bartłomiej<br/>Bażant</div>
+					<div class="result__name-2">Bartłomiej Bażant</div>
+					<div class="result__score score__B"></div>
+					<div class="result__subtitle">zgodności<br/>odpowiedzi</div>
+				</div>
+				<div class="result__candidate">
+					<img class="result__img" src="photos/czapla.jpg" alt="Cezary Czapla">
+					<div class="result__name">Cezary<br/>Czapla</div>
+					<div class="result__name-2">Cezary Czapla</div>
+					<div class="result__score score__C"></div>
+					<div class="result__subtitle">zgodności<br/>odpowiedzi</div>
+				</div>
+				<div class="result__candidate">
+					<img class="result__img" src="photos/dzieciol.jpg" alt="Dominika Dzięcioł">
+					<div class="result__name">Dominika<br/>Dzięcioł</div>
+					<div class="result__name-2">Dominika Dzięcioł</div>
+					<div class="result__score score__D"></div>
+					<div class="result__subtitle">zgodności<br/>odpowiedzi</div>
+				</div>
+				<button class="button repeat">Powtórz test</button>
+			</section>
+
+		</div>	
+
+		<footer class="footer">
+			<div class="footer__info">Strona prezentuje fikcyjnych kandydatów. <br/> Celem jej powstania była nauka tworzenia stron internetowych. <br/> Zdjęcia zostały zaczerpnięte ze strony Pexels.com i nie są własnością twórcy strony.</div>
+		</footer>
+		
+	</div>
+
+	<script src="main.js"></script>
+	
+</body>
+
+</html>
