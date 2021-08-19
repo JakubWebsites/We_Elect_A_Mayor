@@ -42,7 +42,16 @@ figcaption {
     text-transform: uppercase;
     margin: 2rem;
     align-self: center;
-    padding: .5rem;
+    padding: .5rem .8rem;
+    background: #bbbbff;
+    border: 2px outset #5050ff;
+    box-shadow: 3px 3px 2px #000000;
+    border-radius: 3px;
+}
+
+.button:hover {
+    box-shadow: 1px 1px 1px #000000;
+    transform: translate(2px, 2px);
 }
 
 .summary {
@@ -99,6 +108,10 @@ figcaption {
 
 .quiz__answer-item {
     display: flex;
+}
+
+.quiz__answer-item:hover {
+    color: #1515be;
 }
 
 .quiz__answer {

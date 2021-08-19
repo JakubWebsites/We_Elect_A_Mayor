@@ -8,7 +8,7 @@ body {
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 62.5%;
 	color: #ffffff;
-	background-color: #00004d;
+	background: linear-gradient(90deg, #00004d 0%, #0f0f75 50%, #00004d 100%);
 }
 
 .container {
