@@ -156,7 +156,6 @@ const compareScore = () => {
     showResult();
 };
 
-
 /* uruchamia się po zatwierdzeniu ostatniego pytania i przejściu do podsumowania,
    aby porównać odpowiedzi użytkowanika i wyświetlić wynik */
 const summarizeQuiz = () => {

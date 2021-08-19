@@ -19,15 +19,15 @@
 		<header class="header">
 			<a href="index.html" class="header__back-to-main">
 				<h1 class="header__name">Wybieramy <br/><span class="header__mayor">Burmistrza</span></h1>
+				<div class="header__description">
+					<h2 class="header__text">
+						Odpowiedz na ważne pytania o Twoim mieście <br/> i sprawdź, który kandydat ma poglądy podobne do Twoich
+					</h2>
+					<h2 class="header__text-2">
+						Odpowiedz na ważne pytania <br/> o Twoim mieście i sprawdź, <br/> który kandydat ma poglądy <br/> podobne do Twoich
+					</h2>
+				</div>
 			</a>
-			<div class="header__description">
-				<h2 class="header__text">
-					Odpowiedz na ważne pytania o Twoim mieście <br/> i sprawdź, który kandydat ma poglądy podobne do Twoich
-				</h2>
-				<h2 class="header__text-2">
-					Odpowiedz na ważne pytania <br/> o Twoim mieście i sprawdź, <br/> który kandydat ma poglądy <br/> podobne do Twoich
-				</h2>
-			</div>
 		</header>
 			
 		<div class="content">
@@ -63,15 +63,15 @@
 				<form action="" class="quiz__question">
 					<p class="quiz__text"></p>
 					<div class="quiz__answer-list">
-						<div class="quiz__answer-item">
+						<div class="quiz__answer-item answer-item-A">
 							<input type="radio" value="A" id="answerOne" name="answer" class="quiz__answer answerA">
 							<label for="answerOne" class="quiz__answer answer-one-label"></label>
 						</div>
-						<div class="quiz__answer-item">
+						<div class="quiz__answer-item answer-item-B">
 							<input type="radio" value="B" id="answerTwo" name="answer" class="quiz__answer answerB">	
 							<label for="answerTwo" class="quiz__answer answer-two-label"></label>
 						</div>
-						<div class="quiz__answer-item">
+						<div class="quiz__answer-item answer-item-C">
 							<input type="radio" value="C" id="answerThree" name="answer" class="quiz__answer answerC">
 							<label for="answerThree" class="quiz__answer answer-three-label"></label>
 						</div>
@@ -86,7 +86,7 @@
 					<button class="button ignore-last">Pomiń i zakończ</button>
 				</div>
 			</section>
-
+			
 			<section class="result">
 				<div class="result__title">Wyniki</div>
 				<div class="result__candidate">
